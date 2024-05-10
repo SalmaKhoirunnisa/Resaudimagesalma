@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize Image and Audio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resize Image and Audio</h1>
+        <input type="file" id="imageInput" accept="image/*">
+        <input type="file" id="audioInput" accept="audio/*">
+        <button onclick="uploadImage()">Upload Image</button>
+        <button onclick="uploadAudio()">Upload Audio</button>
+        <div id="preview"></div>
+        <div id="downloadOptions">
+            <button id="downloadImageBtn" onclick="downloadImage()" disabled>Download Image</button>
+            <button id="downloadAudioBtn" onclick="downloadAudio()" disabled>Download Audio</button>
+        </div>
+        <button onclick="grayscaleImage()">Convert to Black & White</button>
+        
+    </div>
+    <audio controls id="audio"></audio>
+    <script src="script.js"></script>
+    <h2>By Salma Khoirunnisa</h2>
+</body>
+</html>
